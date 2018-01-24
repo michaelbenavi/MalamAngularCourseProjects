@@ -1,0 +1,16 @@
+<br>  I'm Child
+{{date | date:'short'}}
+
+<div>
+  Users:
+  <br>
+  <div *ngFor="let user of users">
+    Name: {{user.name | uppercase}}<br>
+
+    Age: {{user.age | doubleMe:2:5:6}}<br>
+    sh: {{user.age | doubleMe:2 | showMyAge: user.name}}<br>
+    Doubel: {{user.age | doubleMe:3}}
+    <br>
+    <button (click)="updateParent(user.name)">tell to parent</button>
+  </div>
+</div>
