@@ -1,0 +1,9 @@
+<p>Product Details: {{id}}</p>
+<input [(ngModel)] = "id">
+<button (click) = "getPosts()">Get Current {{id}} Posts</button>
+<!-- Product information -->
+<nav>
+  <a [routerLink]="['overview']">Overview</a>
+  <a [routerLink]="['specs']">Technical Specs</a>
+</nav>
+<router-outlet></router-outlet>

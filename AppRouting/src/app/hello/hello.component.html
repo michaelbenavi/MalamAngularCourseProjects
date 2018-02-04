@@ -1,0 +1,20 @@
+
+  <input [(ngModel)]="name" > 
+  <button (click)="goToByeBye()">Go To Bye Bye</button>
+  <br>
+  <input [(ngModel)]="product" >
+  <button (click)="goToProduct()">Go To Product</button>
+  <app-shared></app-shared>
+  <div>
+      <ul>
+        <li *ngFor="let post of postList">
+          <div>
+            PostID : {{post.postId}}<br>
+            name : {{post.name}}<br>
+            email : {{post.email}}<br>
+            body : {{post.body}}<br>
+          </div>
+        </li>
+    </ul>
+  </div>  
+

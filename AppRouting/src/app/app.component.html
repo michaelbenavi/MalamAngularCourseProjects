@@ -1,0 +1,15 @@
+
+<ul>
+
+<li>
+  <a routerLink="/hello">Hello</a>
+</li>
+<li>
+  <a [routerLink]="['goodbye']" [queryParams]="{name:'Moshe',age:'19'}">Good Bye</a>
+</li>
+<li>
+    <a routerLink="/submodule">Sub Module</a>
+</li>
+</ul>
+<app-shared></app-shared>
+<router-outlet></router-outlet>
